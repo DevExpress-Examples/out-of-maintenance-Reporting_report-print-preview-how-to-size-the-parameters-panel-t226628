@@ -28,7 +28,7 @@
             Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
             Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
             Me.paramLandscape = New DevExpress.XtraReports.Parameters.Parameter()
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
             ' 
             ' Detail
             ' 
@@ -76,7 +76,7 @@
             Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.Detail, Me.TopMargin, Me.BottomMargin})
             Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() { Me.paramLandscape})
             Me.Version = "16.2"
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
         End Sub
 

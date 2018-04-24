@@ -9,7 +9,7 @@ Namespace WindowsFormsApplication3
             Me.Parameters("paramLandscape").Value = Me.Landscape
         End Sub
 
-        Private Sub XtraReport1_ParametersRequestSubmit(ByVal sender As Object, ByVal e As DevExpress.XtraReports.Parameters.ParametersRequestEventArgs) Handles MyBase.ParametersRequestSubmit
+        Private Sub XtraReport1_ParametersRequestSubmit(ByVal sender As Object, ByVal e As DevExpress.XtraReports.Parameters.ParametersRequestEventArgs) Handles Me.ParametersRequestSubmit
             Me.Landscape = CBool(Me.Parameters("paramLandscape").Value)
         End Sub
     End Class
