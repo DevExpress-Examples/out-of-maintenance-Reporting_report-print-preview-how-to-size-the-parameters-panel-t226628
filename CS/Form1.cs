@@ -26,7 +26,7 @@ namespace WindowsFormsApplication3 {
             parametersPanel.Width = 700;
         }
         private  DevExpress.XtraBars.Docking.DockPanel GetParametersPanel(IPrintPreviewForm previewForm) {
-            return previewForm.PrintControl.DockManager.Panels.FirstOrDefault(x => x.Text == PreviewLocalizer.GetString(PreviewStringId.ParametersRequest_Caption));
+            return previewForm.PrintControl.GetDockPanel(PreviewDockPanelKind.Parameters);
         }
     }
 }
