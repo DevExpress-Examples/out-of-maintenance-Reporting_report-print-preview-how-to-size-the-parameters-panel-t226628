@@ -28,7 +28,7 @@ Namespace WindowsFormsApplication3
             parametersPanel.Width = 700
         End Sub
         Private Function GetParametersPanel(ByVal previewForm As IPrintPreviewForm) As DevExpress.XtraBars.Docking.DockPanel
-            Return previewForm.PrintControl.DockManager.Panels.FirstOrDefault(Function(x) x.Text = PreviewLocalizer.GetString(PreviewStringId.ParametersRequest_Caption))
+            Return previewForm.PrintControl.GetDockPanel(PreviewDockPanelKind.Parameters)
         End Function
     End Class
 End Namespace
